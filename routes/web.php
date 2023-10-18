@@ -50,3 +50,4 @@ Route::resource("/admin/activites", actvsController::class);
 
 
 Route::view('/contact','contactForm')->name('contactForm');
+Route::post('/send',[contactController::class,'send'])->name('send.email');
